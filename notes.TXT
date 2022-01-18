@@ -1,0 +1,30 @@
+ 	~4К YouTube Downloader
+
+Это лучшее кресло которое я нашел))) Пользуюсь уже 2 года очень доволен. Оно самое недорогое из аналогов такого уровня.
+ КРЕСЛО EXPERT VISTA BLACK (VSM01)
+   https://kreslalux.ua/kresla-operatora/1658-kreslo-expert-vista-black-vsm01-ergonomichnoe
+
+
+
+https://github.com/starallax/FrontEnd_46/tree/lesson/15/scss/utils/mixins
+
+
+
+// @param {String} $breakpoint - Breakpoint name
+// @require $breakpoints
+
+@mixin respond-to($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+      }
+    }
+   
+    // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+  }

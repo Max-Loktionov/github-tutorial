@@ -1,15 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Git manual</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-Hello, Max
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    Hello, Max
+    <div class="container">
+      <button type="button" class="button is-open" aria-expanded="false" data-menu-button>
+       <svg class="mobile-menu" width="auto" height="18" aria-label="Переключатель мобильного меню">
+         <use class= "icon-cross" href="./images/icons.svg/symbol-defs2.svg#close">5</use>
+         <use class= "icon-menu" href="./images/icons.svg/symbol-defs2.svg#icon-menu_24px"></use>
+        </svg>
+      </button>
+    <h2> победа.ничья</h2>
+      <ul>
+        <li>
+          <a href="http://">
+            <svg class="tor"><use href="./"></use></svg>
+          </a>
+        </li>
+        <li><a href="#">colllibry</a></li>
+        <li><a href="http://"></a></li>
+        <li><a href="http://"></a></li>
+        <li><a href="http://"></a></li>
+        <a href=""></a>
+        </div>
+        <div>
+          <a href="">
+            <p></p>
+            <p></p>
+            <p></p>
+          </a>
+        </div>
+
+        <h2>
+          arcan here
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="" alt="" />
+                <h3></h3>
+                <p class="arcan">global digitalization</p></a
+              >
+            </li>
+            <li>
+              <img src="" alt="" />
+              <h3></h3>
+              <p></p>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <h3></h3>
+              <p></p>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <h3></h3>
+              <p></p>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <h3></h3>
+              <p></p>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <h3></h3>
+              <p></p>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <h3></h3>
+              <p></p>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <h3></h3>
+              <p></p>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <h3></h3>
+              <p></p>
+            </li>
+          </ul>
+        </h2>
+      </ul>
     
-</body>
+
+    <!-- ==========mobile-menu======== -->
+    <!-- Вёрстка выполнена относительно трёх точек перелома:
+  mobile: 480px, 
+   tablet: 768px и 
+   desktop: 1200px. -->
+
+   <!-- =========js======= -->
+<script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+
+  
+
+    <!-- ==========mobile-menu -END-======== -->
+    <!-- фон -->
+    <div class="canvas"></div>
+
+    <img src="" alt="" />
+
+    <!-- Занятие 7 псевдоэлементы-- */ -->
+    <ul class="list">
+      <li class="list-item">
+        <a href="" class="list-link">Home</a>
+      </li>
+      <li class="list-item">
+        <a href="" class="list-link">Portfolio</a>
+      </li>
+      <li class="list-item">
+        <a href="" class="list-link">Team</a>
+      </li>
+      <li class="list-item">
+        <a href="" class="list-link">About</a>
+      </li>
+    </ul>
+
+    <!-- градиент -->
+
+    <div class="tile-set">
+      <div class="tile">to bottom</div>
+      <div class="tile">to top</div>
+      <div class="tile">to bottom right</div>
+      <div class="tile">to top left</div>
+    </div>
+
+    <!-- Lesson 9 -->
+
+    <!-- ..............Свойство position........ -->
+    <!-- position: static | relative | absolute | fixed | sticky | inherit
+                        | absolute |
+    При абсолютном позиционировании элемент вырывается из потока страницы, то есть соседние элементы
+    занимают его место. Отсчёт значений top, left, bottom и right для абсолютно позициоинированного
+    элемента ведётся относительно ближайшего предка с позициоинированием отличным от статического.
+    Если такого предка не окажется, то отсчёт будет произведен от границ элемента <body>.
+Тогда значения top, left, right и bottom, для абсолютно позиционированного элемента, 
+отсчитываются от границ этого предка, а не от <body>. 
+    То есть задание position: relative предку используется с единственной целью - 
+    заставить абсолютно позиционированный элемент располагаться относительно этого предка.
+-->
+    <!-- .............Фиксированное позиционирование -->
+    <!-- При фиксированном позиционировании элемент изымается из потока страницы
+     и позиционируется относительно вьюпорта (окна браузера). Это создает
+     эффект фиксации элемента в определённом месте экрана при прокрутке 
+     страницы. -->
+
+    <button class="chat-button"></button>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat iste
+      reprehenderit debitis hic cupiditate dolorem repudiandae, recusandae id
+      esse delectus magnam maxime nobis, tenetur officiis deleniti quo omnis,
+      eligendi dolores alias sit reiciendis autem? Vero quo debitis dolorem
+      error minus sint tenetur iusto commodi nihil itaque impedit cum facilis
+      eveniet dolore explicabo rerum repudiandae nisi quasi provident
+      doloremque, inventore dignissimos! Laborum repellat assumenda, maiores,
+      cumque non provident animi error nam asperiores vitae sed saepe nesciunt,
+      facere eligendi. Aliquid, delectus. Quasi et, cumque ipsa nesciunt velit
+      voluptates tenetur fugiat, provident nobis cupiditate facilis quaerat
+      magni, ipsum reiciendis? Placeat, facere. Provident, quam doloremque.
+      Architecto cum, nisi dolores, ipsa eaque maiores fugiat magnam quasi sunt
+      amet culpa quod necessitatibus quisquam recusandae veniam aperiam modi
+      animi. At quae ea ducimus vero aperiam ratione, ullam architecto ut
+      assumenda vel natus commodi quisquam tempora! Magni omnis voluptatibus,
+      veritatis saepe illo rem aspernatur unde. Maiores, earum illum. Nemo modi
+      debitis culpa commodi aliquam molestias quas ipsam ex nostrum perferendis
+      ratione adipisci a, ullam esse porro, doloribus, asperiores voluptatem at?
+      Cupiditate explicabo dolore ipsa voluptate totam reprehenderit doloremque
+      aut. Eius, pariatur magni nisi, optio enim odio porro cum fuga quasi, quis
+      rerum incidunt eligendi corporis dolor autem ad!
+    </p>
+    <p>
+      Aliquid repellat voluptatem quam labore maiores veritatis, qui minima
+      velit autem dolorem sequi nostrum ad ipsa ratione laboriosam incidunt
+      officiis eaque sed dicta nulla eligendi totam sapiente non modi?
+      Repudiandae est, nobis consectetur nulla consequuntur tempora molestiae
+      debitis blanditiis quas minima. Fugit ducimus magni velit eveniet dicta
+      veniam suscipit officia vel itaque, libero iste placeat quasi ex quibusdam
+      beatae consequuntur facere officiis? Quae aut, magni saepe repellendus
+      eaque minima. Sunt fugit ad id? Assumenda aliquam quas maiores, vel illum
+      atque asperiores commodi dolorem facilis? Assumenda expedita consequuntur
+      quasi eligendi. Corrupti sunt, minima odit illo eum error vel praesentium,
+      quod nihil, ad accusantium quibusdam atque odio. Quod aut perspiciatis
+      sunt sed quae fuga illo consequuntur delectus? Iusto magni doloribus error
+      iure, enim dolorem, culpa dolore placeat ea esse corrupti. Sapiente,
+      repellendus aperiam, nisi quis officiis natus assumenda pariatur
+      blanditiis aspernatur voluptas totam perferendis. Delectus voluptas beatae
+      perspiciatis tempora dolorum veritatis corrupti alias incidunt dolorem
+      fugiat. Nobis provident nisi animi, possimus hic tempora et sunt iste qui
+      voluptatibus eveniet iusto, reprehenderit impedit quod, culpa delectus
+      iure officia cum rerum harum. Eveniet perferendis et ratione autem beatae
+      repellendus, corporis eos tenetur voluptate possimus quae quisquam
+      accusantium qui nihil fugiat fugit error impedit molestiae.
+    </p>
+    <p>
+      Fuga in dolorum quod suscipit nisi officia, laborum, nesciunt voluptatem
+      esse consequatur harum iste accusantium, nihil excepturi odio tempora
+      iusto possimus. Adipisci, obcaecati! Asperiores aut nisi repellat
+      accusantium, ab numquam nostrum commodi reiciendis itaque amet dolore
+      repellendus rem harum qui dolor voluptatem esse sunt eos ex consequuntur
+      voluptate fugiat ipsa error minus! Cumque animi omnis placeat temporibus
+      voluptatum sequi perferendis enim est, sunt accusantium optio similique
+      illo, consequatur quasi provident culpa. Ea porro esse dolorum? Unde quod
+      illum quos, molestiae iure illo beatae, nemo atque consectetur, qui earum
+      minima necessitatibus excepturi adipisci eos dolore sint vel tempora
+      voluptate? Quam deserunt ipsum consectetur dolore eum quibusdam voluptates
+      nam, sed et voluptate, veniam atque esse fugiat sequi, neque omnis.
+      Expedita ut mollitia eveniet voluptatibus ipsam, rem reprehenderit
+      eligendi corporis provident soluta ea quo, ratione dignissimos unde quae
+      labore! Vitae nam placeat voluptate dicta asperiores, quibusdam sequi,
+      enim magni porro facilis, omnis laudantium officia? Illum fugit quia
+      exercitationem provident ratione iure! Ipsa voluptates asperiores,
+      doloribus quia facere labore facilis molestias delectus tempore nesciunt,
+      optio omnis reprehenderit, exercitationem blanditiis numquam quidem ipsum.
+      Atque et earum reprehenderit amet nostrum, dignissimos delectus, aut quas
+      a accusamus corrupti voluptate repudiandae quia, ipsa cupiditate similique
+      perferendis dolor doloribus!
+    </p>
+    <p>
+      Voluptas, facilis accusantium? Eveniet error ea consectetur enim quas
+      consequuntur provident doloremque facere neque sit sed accusamus, saepe
+      laboriosam aut? Error rem ratione similique explicabo, repellat doloribus
+      quos sint quaerat dolorem magnam dolor atque aliquam fugit ea, aliquid
+      nisi in vero repudiandae voluptates totam consequuntur temporibus.
+      Molestias voluptate, blanditiis amet expedita explicabo aperiam minus
+      nesciunt itaque vitae maxime, velit, ad consequatur obcaecati delectus ex
+      id eum nihil? In pariatur odit sequi ducimus nobis nihil distinctio
+      commodi mollitia eos id temporibus magni totam corporis aliquid, labore
+      nostrum unde hic corrupti perspiciatis veritatis ea dicta. Fugiat facere
+      numquam nesciunt tempore quasi voluptates dolor in eum, sit unde iure at
+      ipsum ex nisi optio architecto saepe sequi quaerat, a nam? Ratione unde
+      magni ex natus vel ad autem tempora illo sunt corrupti, facilis odit,
+      excepturi at culpa ullam eaque delectus qui repellat molestiae
+      voluptatibus! Eveniet minima hic accusantium rem aut officiis quae
+      repellendus, quam alias sequi laboriosam, quas corporis tempore debitis?
+      Sed eius fugiat inventore tenetur, ducimus ipsa culpa harum velit ea
+      numquam neque ullam molestias nesciunt sit obcaecati rem esse! Quam
+      excepturi quaerat tempora. Corporis, nemo saepe tempore sed ipsum eum
+      porro incidunt aperiam fugiat consequuntur? Tenetur officiis nostrum
+      explicabo. Odit, atque?
+    </p>
+    <!-- .............Липкое позиционирование........ -->
+    <!-- Для  липкого позиционирования  три условия:
+   1 Липкому элементу  задать позиционирование position: sticky.
+   2 У липкого элемента должно быть установлено положение, например top: 0.
+   3 Элемент-контейнер должен быть больше по высоте чем липкий элемент. -->
+
+    <section class="section">
+      <h2 class="section-title">First section heading</h2>
+      <p class="section-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+        excepturi? Et molestiae aspernatur, recusandae itaque veritatis
+        reprehenderit facere deserunt corrupti nesciunt beatae quos vitae?
+        Voluptatibus recusandae quis at, fugit vero alias facilis, corrupti
+        labore in, explicabo beatae? Vel labore cum voluptatum ullam amet nihil
+        quia excepturi similique assumenda obcaecati? Quis quibusdam nam unde,
+        magni non repellat. Aliquam voluptatibus, vel, incidunt ut facilis,
+        inventore amet sint quisquam neque consequatur hic. Exercitationem
+        itaque inventore ad amet corporis labore cupiditate eius ullam
+        voluptates nihil, fugit vero a velit esse voluptas consequatur eos
+        minima quod assumenda ab officia repudiandae dicta sint. Voluptate nemo
+        dolor sapiente impedit! Nam velit repellat cupiditate! Cum hic sint
+        fugiat necessitatibus ipsam pariatur debitis minus est, eum eos ratione
+        enim porro exercitationem facere, a voluptas obcaecati voluptatibus
+        cupiditate beatae deserunt aliquam iusto aut quas temporibus! Harum
+        officia in voluptatum! Quidem, voluptatibus culpa repellendus incidunt
+        aspernatur saepe, ipsum officia, inventore quo maiores libero quaerat
+        ipsa dignissimos labore blanditiis provident qui recusandae sunt
+        dolorem? Necessitatibus maiores et quos odit nemo quas quibusdam,
+        aliquam voluptatum sint cupiditate sequi consequatur cumque nulla
+        quaerat at perspiciatis quis voluptatibus natus fuga dignissimos
+        accusamus. Odio, quibusdam fuga earum sit explicabo cumque, facilis
+        consequatur et voluptas doloribus rerum.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Second section heading</h2>
+      <p class="section-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+        excepturi? Et molestiae aspernatur, recusandae itaque veritatis
+        reprehenderit facere deserunt corrupti nesciunt beatae quos vitae?
+        Voluptatibus recusandae quis at, fugit vero alias facilis, corrupti
+        labore in, explicabo beatae? Vel labore cum voluptatum ullam amet nihil
+        quia excepturi similique assumenda obcaecati? Quis quibusdam nam unde,
+        magni non repellat. Aliquam voluptatibus, vel, incidunt ut facilis,
+        inventore amet sint quisquam neque consequatur hic. Exercitationem
+        itaque inventore ad amet corporis labore cupiditate eius ullam
+        voluptates nihil, fugit vero a velit esse voluptas consequatur eos
+        minima quod assumenda ab officia repudiandae dicta sint. Voluptate nemo
+        dolor sapiente impedit! Nam velit repellat cupiditate! Cum hic sint
+        fugiat necessitatibus ipsam pariatur debitis minus est, eum eos ratione
+        enim porro exercitationem facere, a voluptas obcaecati voluptatibus
+        cupiditate beatae deserunt aliquam iusto aut quas temporibus! Harum
+        officia in voluptatum! Quidem, voluptatibus culpa repellendus incidunt
+        aspernatur saepe, ipsum officia, inventore quo maiores libero quaerat
+        ipsa dignissimos labore blanditiis provident qui recusandae sunt
+        dolorem? Necessitatibus maiores et quos odit nemo quas quibusdam,
+        aliquam voluptatum sint cupiditate sequi consequatur cumque nulla
+        quaerat at perspiciatis quis voluptatibus natus fuga dignissimos
+        accusamus. Odio, quibusdam fuga earum sit explicabo cumque, facilis
+        consequatur et voluptas doloribus rerum.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Third section heading</h2>
+      <p class="section-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+        excepturi? Et molestiae aspernatur, recusandae itaque veritatis
+        reprehenderit facere deserunt corrupti nesciunt beatae quos vitae?
+        Voluptatibus recusandae quis at, fugit vero alias facilis, corrupti
+        labore in, explicabo beatae? Vel labore cum voluptatum ullam amet nihil
+        quia excepturi similique assumenda obcaecati? Quis quibusdam nam unde,
+        magni non repellat. Aliquam voluptatibus, vel, incidunt ut facilis,
+        inventore amet sint quisquam neque consequatur hic. Exercitationem
+        itaque inventore ad amet corporis labore cupiditate eius ullam
+        voluptates nihil, fugit vero a velit esse voluptas consequatur eos
+        minima quod assumenda ab officia repudiandae dicta sint. Voluptate nemo
+        dolor sapiente impedit! Nam velit repellat cupiditate! Cum hic sint
+        fugiat necessitatibus ipsam pariatur debitis minus est, eum eos ratione
+        enim porro exercitationem facere, a voluptas obcaecati voluptatibus
+        cupiditate beatae deserunt aliquam iusto aut quas temporibus! Harum
+        officia in voluptatum! Quidem, voluptatibus culpa repellendus incidunt
+        aspernatur saepe, ipsum officia, inventore quo maiores libero quaerat
+        ipsa dignissimos labore blanditiis provident qui recusandae sunt
+        dolorem? Necessitatibus maiores et quos odit nemo quas quibusdam,
+        aliquam voluptatum sint cupiditate sequi consequatur cumque nulla
+        quaerat at perspiciatis quis voluptatibus natus fuga dignissimos
+        accusamus. Odio, quibusdam fuga earum sit explicabo cumque, facilis
+        consequatur et voluptas doloribus rerum.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Fourth section heading</h2>
+      <p class="section-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+        excepturi? Et molestiae aspernatur, recusandae itaque veritatis
+        reprehenderit facere deserunt corrupti nesciunt beatae quos vitae?
+        Voluptatibus recusandae quis at, fugit vero alias facilis, corrupti
+        labore in, explicabo beatae? Vel labore cum voluptatum ullam amet nihil
+        quia excepturi similique assumenda obcaecati? Quis quibusdam nam unde,
+        magni non repellat. Aliquam voluptatibus, vel, incidunt ut facilis,
+        inventore amet sint quisquam neque consequatur hic. Exercitationem
+        itaque inventore ad amet corporis labore cupiditate eius ullam
+        voluptates nihil, fugit vero a velit esse voluptas consequatur eos
+        minima quod assumenda ab officia repudiandae dicta sint. Voluptate nemo
+        dolor sapiente impedit! Nam velit repellat cupiditate! Cum hic sint
+        fugiat necessitatibus ipsam pariatur debitis minus est, eum eos ratione
+        enim porro exercitationem facere, a voluptas obcaecati voluptatibus
+        cupiditate beatae deserunt aliquam iusto aut quas temporibus! Harum
+        officia in voluptatum! Quidem, voluptatibus culpa repellendus incidunt
+        aspernatur saepe, ipsum officia, inventore quo maiores libero quaerat
+        ipsa dignissimos labore blanditiis provident qui recusandae sunt
+        dolorem? Necessitatibus maiores et quos odit nemo quas quibusdam,
+        aliquam voluptatum sint cupiditate sequi consequatur cumque nulla
+        quaerat at perspiciatis quis voluptatibus natus fuga dignissimos
+        accusamus. Odio, quibusdam fuga earum sit explicabo cumque, facilis
+        consequatur et voluptas doloribus rerum.
+      </p>
+    </section>
+    <!-- ............Липкое позиционирование..00...... -->
+
+    <!-- .............Свойство z-index -->
+    <!-- Это правило задаёт свойство z-index, которое контролирует глубину
+     (порядок) позиционированных элементов на странице по оси z - от глаз
+     пользователя и до экрана. Значениями может быть любое целое число, 
+     в том числе и отрицательное. 
+   Общий предок позиционируемых элементов создает контекст (stacking context)
+ - область в которой свойство z-index элемента оказывает влияние на другие
+   элементы с z-index. Чем больше значение z-index внутри этого контекста,
+   тем выше располагается элемент.
+ Минимальное (даже отрицательное) значение z-index говорит о том, что другие
+ элементы вне потока будут выше этого элемента. Если у двух элементом 
+ одинаковые значения z-index, выше будет элемент объявленный последним в 
+ HTML-коде.-->
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+    <!-- ...........Свойство z-index ..00-->
+
+    <!-- ............Свойство overflow -->
+    <!-- Свойство overflow управляет тем, как ведёт себя содержимое элемента,
+ если его размер превышает допустимую длину или ширину.
+
+overflow: visible | hidden | scroll | auto
+
+visible - переполняющее содержимое видимо. Значение по умолчанию.
+hidden - всё что выходит за границы блока будет визуально скрыто.
+scroll - при переполнении появляются горизонтальная и вертикальная 
+        полосы прокрутки, даже если нужна только одна.
+auto - похоже на значение scroll, но полосы прокрутки показываются только 
+там где они действительно необходимы, а не все сразу.-->
+    <div class="thumb">
+      <img
+        src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640"
+        alt=""
+      />
+    </div>
+    <!-- ............Свойство overflow..00 -->
+
+    <!-- .......Декоративный оверлей# -->
+    <!-- Cвойство overflow со значением hidden используется при создании 
+декоративных эффектов с появлением скрытого контента из-за границ блока. -->
+    <h1>Move the mouse over the square</h1>
+
+    <div class="box">
+      <div class="overlay">
+        <p>
+          This content is hidden through transformation and only appears when
+          hovering over <code>div.box</code>
+        </p>
+      </div>
+    </div>
+    <!-- .......Декоративный оверлей# ..00-->
+
+    <!-- ............CSS-переходы -->
+    <!-- transition-property: <свойство>
+        transition-duration: <время>
+        transition-timing-function: <функция распределения времени>
+        transition-delay: <задержка> -->
+    <div class="box"></div>
+
+    <!-- .....Свойство transition-property#-->
+    <!-- Задаёт свойства к которым будет применён эффект перехода. Значением 
+     может быть одно свойство или список свойств через запятую.
+     По умолчанию значение all - анимируются все возможные свойства. -->
+
+    <!-- ....Свойство transition-duration -->
+    <!-- Если продолжительность перехода не указана, то изменение значений 
+     произойдёт мгновенно, без анимации. Свойство transition-duration задаёт
+     промежуток времени в течение которого должен осуществиться переход. 
+     Указывается в секундах, например 2s или 0.5s, либо в миллисекундах 
+     - 2000ms и 500ms соотвественно. Если разные свойства имеют разные 
+     значения времени перехода, то они перечисляются через запятую. -->
+    <h1>A transition is triggered when hovering over a container</h1>
+
+    <div class="flex-container">
+      <div class="circle">500ms</div>
+      <div class="circle">1500ms</div>
+      <div class="circle">3000ms</div>
+    </div>
+
+    <!-- Свойство transition-timing-function -->
+    <!-- Задаёт функцию распределения времени, которая описывает скорость 
+    перехода свойства от одного значения к другому, за время указанное 
+    в transition-duration, то есть поведение анимации.
+В CSS есть несколько ключевых слов для описания базовых функций Безье. 
+По умолчанию используется значение ease - переход начинается медленно, 
+быстро ускоряется, а затем снова замедляется в конце. Остальные ключевые 
+    слова: linear, ease-in, ease-out, и ease-in-out. -->
+
+    <!-- .....Свойство transition-delay -->
+    <!-- Задержка после которой начнётся анимация перехода. Используется 
+    для построения сценариев - последовательности переходов разных 
+    элементов. По умолчанию задано значение 0s. -->
+
+    <!-- Если анимируется несколько свойств, то набор значений для каждого из
+     них разделяется запятой. Необходимо обязательно указать свойство и 
+     время перехода, функцию времени и задержку можно не указывать, тогда
+     для них будут использованы значения по умолчанию. -->
+
+    <!-- ............CSS-переходы..00 -->
+
+    <!-- Lesson 9 END -->
+
+    <!-- ///////The end\\\\\\ -->
+
+<div class="grow">
+  <div class="secta">rest</div>
+  <aside>150px</aside>
+</div>
+
+<div class="grow">
+  <aside>150px</aside>
+  <div class="rest">rest
+    <div class="vova">vova</div>
+  </div>
+
+  <div class="rest">
+    <div class="polo">polo</div> rest</div>
+  <div class="rest">rest</div>
+  <div class="rest">rest</div>
+  <aside>150px rectangle</aside>
+</div>
+
+<div class="grow">
+  <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quod cupiditate saepe tempora incidunt, id nobis iure? Neque harum illum voluptatibus a numquam, nihil asperiores, amet provident magni minima tempore!</section>
+  <aside>150px
+    <div class="bock">200px</div>
+  </aside>
+</div>
+
+
+  </body>
 </html>
