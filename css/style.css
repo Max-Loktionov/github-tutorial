@@ -1,4 +1,612 @@
-body {
-  background-color: blueviolet;
-  color: blanchedalmond;
+/* ==========mobile-menu========  */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and {
+    min-width: 480px;
+    width: 480px;
+  }
 }
+
+/* Вёрстка выполнена относительно трёх точек перелома:
+  480px,
+   768px и 
+   1200px. */
+/* ==========mobile-menu -END-========  */
+
+/* ---------------фон------ */
+/* body { 
+  margin: 0;
+}
+
+.canvas {
+  min-width: 1000px;
+  height: 640px;
+
+  background-image: url("https://icons8.ru/icon/OMFGs4R00J0z/japanese-dolls"),
+    url("https://image.flaticon.com/icons/svg/2847/2847383.svg"),
+    url("https://image.flaticon.com/icons/svg/2909/2909673.svg"), url('https://tlgrm.ru/_/stickers/e3a/876/e3a87689-707f-3495-b94a-8ee96e2538e5/39.webp'),
+    url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+
+  background-size: 100px, 100px, 150px, 230px, cover;
+  background-repeat: no-repeat;
+  background-position: top 120px right 130px, top 270px left 130px, center, 100px 60px,
+    center;
+    object-fit: fill
+  }  */
+
+/*      Занятие 7 псевдоэлементы-- */
+/* * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #2a2a2a;
+  }
+  
+  .list {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .list-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  .list-link {
+    display: inline-flex;
+    align-items: center;
+    color: currentColor;
+    text-decoration: none;
+    font-size: 32px;
+  } */
+
+/* .list-link::before,
+  .list-link::after {
+    content: "  ";
+    display: inline-block;
+    width: 24px;
+    height: 24px; */
+/* .list-link::before,
+.list-link::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  }
+   */
+/* Adds a fire icon in front of the link text */
+/* .list-link::before {
+  background-color: #ff9800;}
+
+  .list-link::before {
+    margin-right: 16px;
+    background-image: url('https://tlgrm.ru/_/stickers/e3a/876/e3a87689-707f-3495-b94a-8ee96e2538e5/39.webp');
+  } */
+
+/* Adds and hides the cat icon after the link text */
+
+/* .list-link::after {
+    background-color: teal;
+  }
+
+
+  .list-link::after {
+    display: none;
+    margin-left: 16px;
+    background-image: url("https://image.flaticon.com/icons/svg/2909/2909673.svg");
+  }
+  
+  .list-link:hover {
+    color: #2196f3;
+  } */
+
+/* Show the cat icon on hover */
+/* .list-link:after:hover {
+    display: block;
+   
+  } */
+
+/* градиент */
+* {
+  box-sizing: border-box;
+}
+
+.tile-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tile {
+  height: 200px;
+  flex-basis: calc(50% - 10px);
+  margin: 5px;
+  border-radius: 4px;
+  background-color: #9e9e9e;
+
+  text-align: center;
+  line-height: 200px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 24px;
+  letter-spacing: -0.05em;
+
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.tile:nth-child(1) {
+  background-image: linear-gradient(
+    to bottom,
+    #f44336 15%,
+    #09792b 15%,
+    #09792b 40%,
+    #00b9ff 40%,
+    #00b9ff 65%,
+    #ffb800 65%
+  );
+}
+
+.tile:nth-child(1) {
+  background-image: linear-gradient(
+    to bottom,
+    #fff 10%,
+    #aaa 10%,
+    #aaa 20%,
+    #bbbbbb 20%,
+    #bbbbbb 35%,
+    #cccccc 35%,
+    #cccccc 45%,
+    #dddddd 45%,
+    #dddddd 55%,
+    #111111 55%,
+    #111111 65%,
+    #333333 65%,
+    #333333 75%,
+    #555555 75%,
+    #555555 85%,
+    #999999 85%
+  );
+}
+
+.tile:nth-child(2) {
+  background-image: linear-gradient(
+    to top,
+    #f44336 15%,
+    #09792b 15%,
+    #09792b 40%,
+    #00b9ff 40%,
+    #00b9ff 65%,
+    #ffb800 65%
+  );
+}
+
+.tile:nth-child(3) {
+  background-image: linear-gradient(
+    to bottom right,
+    #f44336 15%,
+    #09792b 15%,
+    #09792b 40%,
+    #00b9ff 40%,
+    #00b9ff 65%,
+    #ffb800 65%
+  );
+}
+
+.tile:nth-child(4) {
+  background-image: repeating-linear-gradient(
+    to left,
+    blue,
+    blue 20px,
+    red 20px,
+    red 40px,
+    green 40px,
+    green 50px /* Опеределяет размер градиента */
+  );
+}
+
+/* ........Lesson 9....... */
+
+/* .............Фиксированное позиционирование */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.chat-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1653/1653630.png");
+  background-size: contain;
+
+  cursor: pointer;
+}
+/* .............Фиксированное позиционирование 00 */
+
+/* .............Липкое позиционирование........ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9fd;
+  color: #2a2a2a;
+}
+
+.section {
+  margin-bottom: 20px;
+  width: 360px;
+}
+
+.section-title {
+  position: sticky;
+  top: -1px;
+
+  margin: 0;
+  padding: 16px;
+  background-color: #ccc;
+  text-align: center;
+  text-transform: uppercase;
+
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.section-text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.section:nth-child(1) .section-title {
+  color: #fff;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
+}
+
+.section:nth-child(2) .section-title {
+  background-image: repeating-linear-gradient(
+    to right,
+    #f6ba52,
+    #f6ba52 10px,
+    #ffd180 10px,
+    #ffd180 20px
+  );
+}
+
+.section:nth-child(3) .section-title {
+  color: #fff;
+  background-image: repeating-radial-gradient(
+    circle,
+    purple,
+    purple 10px,
+    #4b026f 10px,
+    #4b026f 20px
+  );
+}
+
+.section:nth-child(4) .section-title {
+  color: #fff;
+  background-image: repeating-linear-gradient(
+    to right,
+    #ff8a00,
+    #ff8a00 10px,
+    #e52e71 10px,
+    #e52e71 20px
+  );
+}
+/* .............Липкое позиционирование 00........ */
+
+/* ............Свойство z-index */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f9f9fd;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 64px;
+  color: #fff;
+
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box:nth-child(1) {
+  top: 20px;
+  left: 130px;
+  background-color: #1789fc;
+
+  z-index: 2;
+}
+
+.box:nth-child(2) {
+  top: 30px;
+  left: 230px;
+  background-color: #ef233c;
+
+  z-index: 2;
+}
+
+.box:nth-child(3) {
+  top: 140px;
+  left: 220px;
+  background-color: #ffd07b;
+  z-index: 1;
+}
+
+.box:nth-child(4) {
+  top: 120px;
+  left: 120px;
+  background-color: #4caf50;
+}
+
+/* ............Свойство z-index..00 */
+
+/* ............Свойство overflow  */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumb {
+  /* border: 10px solid green; */
+  border-radius: 50px;
+  width: 480px;
+
+  overflow: hidden;
+}
+/* ............Свойство overflow ..00 */
+
+/* .......Декоративный оверлей# */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  background-color: #f9f9fd;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+/* .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bdbdbd;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  overflow: hidden;
+} */
+
+.box:hover .overlay {
+  transform: translatex(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f51b5;
+
+  transform: translatex(-100%);
+  transition: transform 250ms ease;
+}
+
+.overlay > p {
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.overlay code {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #2a2a2a;
+}
+/* .......Декоративный оверлей#..00 */
+
+/* ............CSS-переходы  */
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9fd;
+} */
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: tomato;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+} */
+
+/* .box:hover {
+  background-color: teal;
+  transform: rotate(180deg);
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.flex-container {
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  transition-property: transform;
+}
+
+.flex-container:hover .circle {
+  transform: scale(1.5);
+}
+
+.circle:nth-child(1) {
+  background-color: orange;
+
+  transition-duration: 500ms;
+}
+
+.circle:nth-child(2) {
+  background-color: #03a9f4;
+
+  transition-duration: 1500ms;
+}
+
+.circle:nth-child(3) {
+  background-color: palevioletred;
+
+  transition-duration: 3000ms;
+}
+
+/* ............CSS-переходы..00  */
+
+/* =============mixin============= */
+.grow {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: yellow;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+section {
+  flex-grow: 1;
+  background-color: violet;
+}
+.rest {
+  flex-grow: 1;
+  background-color: rgb(130, 238, 135);
+  width: calc((100% - 3 * 30px) / 3);
+  margin: 15px;
+  outline: darkblue solid 1px;
+}
+
+.vova {
+  background-color: darkgrey;
+  height: 200px;
+}
+.polo {
+  background-color: #fff;
+  height: 100px;
+  width: 200px;
+}
+
+aside {
+  flex-basis: 150px;
+  flex-shrink: 1;
+  background-color: brown;
+}
+
+.bock {
+  display: flex;
+  flex-basis: 200px;
+  background-color: cyan;
+}
+/* flex-shrink: 0; prevents the aside from shrinking, if the section attempts to grow due to its content. (see third example) */
+
+/* Instead of flex-basis: 150px; and flex-shrink: 0; you can use the shorthand: */
+/* flex: 0 0 150px; */
